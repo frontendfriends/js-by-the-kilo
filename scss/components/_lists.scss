@@ -1,0 +1,16 @@
+.list--style-a {
+    font-size: $vr*4;
+    margin-bottom: $vr*5;
+
+    .list__bullet {
+        color: $brand-color-a;
+        font-size: 200%;
+        vertical-align: middle;
+        padding-right: 20px;
+    }
+
+    .list__highlight {
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+    }
+}
