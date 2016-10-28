@@ -1,0 +1,76 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: after
+  // debug: (image: show)
+);
+
+// break points
+$breakpoint-sm-width: 480px;
+$breakpoint-md-width: 860px;
+$breakpoint-lg-width: 1200px;
+$breakpoint-xl-width: 1400px;
+$breakpoint-xxl-width: 1920px;
+
+//aliases
+$sm: $breakpoint-sm-width;
+$md: $breakpoint-md-width;
+$lg: $breakpoint-lg-width;
+$xl: $breakpoint-xl-width;
+$xxl: $breakpoint-xxl-width;
+
+$breakpoint-xs-width-max: $sm - 1;
+$breakpoint-sm-width-max: $md - 1;
+$breakpoint-md-width-max: $lg - 1;
+$breakpoint-lg-width-max: $xl - 1;
+$breakpoint-xl-width-max: $xxl - 1;
+
+$retina-query: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
+
+$max-width: 1280px;
+
+// Colors
+$brand-color-a: #d24440;
+$brand-color-b: #33598b;
+$brand-color-c: #bdcf3f;
+
+$brand-colors: (
+  a: $brand-color-a,
+  b: $brand-color-b,
+  c: $brand-color-c
+);
+
+$brand-white: #FFF;
+$brand-black: #000;
+
+$text-color: #525252 !default;
+$background-color: #fafafa;
+
+// Dimensions
+$vertical-rhythm: 5px;
+$vr: $vertical-rhythm;
+
+// Typography
+$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-family-serif: 'Georgia Pro', Georgia, Times, serif;
+$font-family-mono: 'Anonymous Pro', 'Droid Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, 'Lucida Console', Courier, monospace;
+$font-family-base: $font-family-sans-serif;
+$icon-font: 'icomoon';
+
+// Font Sizing
+$font-size-base: 16px;
+$line-height-base: 1.4;
+
+$font-weight-bold: 700;
+$font-weight-medium: 600;
+$font-weight-regular: 400;
+$font-weight-light: 100;
+
+// z-index
+$z-base: 1;
+$z-small: 5;
+$z-mid: 10;
+$z-high: 100;
+$z-super: 1000;

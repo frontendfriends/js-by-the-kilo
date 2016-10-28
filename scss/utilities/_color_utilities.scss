@@ -1,0 +1,34 @@
+@function dynamic-color($color, $lightness: 50, $dark-color: $brand-black, $light-color: $brand-white) {
+     @if (lightness($color) > $lightness){
+        @return $dark-color; // Lighter background, return dark color
+    }
+    @else {
+         @return $light-color; // Darker background, return light color
+    }
+}
+
+@function tint($color, $percentage) {
+  @return mix(#fff, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(#000, $color, $percentage);
+}
+
+@mixin placeholder($color) {
+	&:-moz-placeholder {
+		color: $color; // Firefox 4-18
+	}
+
+	&::-moz-placeholder {
+		color: $color; // Firefox 19+
+	}
+
+	&:-ms-input-placeholder {
+		color: $color; // Internet Explorer 10+
+	}
+
+	&::-webkit-input-placeholder {
+		color: $color; // Safari and Chrome
+	}
+}

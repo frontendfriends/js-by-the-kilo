@@ -1,0 +1,27 @@
+// for monitor-mq.js
+.monitor-mq {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: -9999em;
+	left: -9999em;
+	// smallest
+	width: $sm;
+
+	@include breakpoint($md) {
+		width: $md;
+	}
+
+	@include breakpoint($lg) {
+		width: $lg;
+	}
+
+	@include breakpoint($xl) {
+		width: $xl;
+	}
+
+	@include breakpoint($xxl) {
+		width: $xxl;
+	}
+}

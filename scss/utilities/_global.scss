@@ -1,0 +1,49 @@
+* {
+	-webkit-tap-highlight-color: transparent;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+
+:focus {
+	outline: none;
+}
+
+html {
+	-webkit-overflow-scrolling: touch;
+
+    min-height: 100%;
+	margin-top: 0 !important;
+
+	background: $background-color;
+
+    font-size: 100%;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	// Disable iOS/WinMobile font size changes
+	@include breakpoint(max-width $breakpoint-xs-width-max) {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+}
+
+
+body {
+	color: $text-color;
+
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-regular;
+	line-height: $line-height-base;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	@include container;
+	width: $max-width;
+	padding: 0 40px;
+}
