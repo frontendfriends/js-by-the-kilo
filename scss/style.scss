@@ -3,11 +3,10 @@
 
 @import 'utilities/reset';
 @import 'utilities/variables';
-@import 'utilities/global';
-@import 'utilities/typography';
 @import 'utilities/layout_utilities';
 @import 'utilities/color_utilities';
+@import 'utilities/global';
+@import 'utilities/typography';
 @import 'utilities/monitor_mq';
-@import 'utilities/wordpress';
 
-// @import 'components/container';
+@import 'components/buttons';

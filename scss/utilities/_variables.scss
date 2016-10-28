@@ -35,12 +35,7 @@ $max-width: 1280px;
 $brand-color-a: #ed1c24;
 $brand-color-b: #480E78;
 $brand-color-c: #ffd400;
-
-$brand-colors: (
-  a: $brand-color-a,
-  b: $brand-color-b,
-  c: $brand-color-c
-);
+$brand-color-d: #ccc;
 
 $brand-white: #FFF;
 $brand-black: #000;
@@ -49,8 +44,17 @@ $text-color: #525252 !default;
 $background-color: #fafafa;
 
 // Dimensions
-$vertical-rhythm: 5px;
+$vertical-rhythm: 6px;
 $vr: $vertical-rhythm;
+
+// Buttons
+$btn-border-width: 2px;
+
+$btn-padding-y-default: $vr*2;
+$btn-padding-x-default: 30px;
+
+$btn-padding-y-large: $vr*2;
+$btn-padding-x-large: 50px;
 
 // Typography
 $font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;

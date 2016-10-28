@@ -24,31 +24,57 @@ h4,
 h5,
 h6 {
     display: block;
-    margin-bottom: $vr*3;
-    font-weight: $font-weight-medium;
+    font-family: $font-family-base;
+    font-weight: $font-weight-bold;
 }
 
 .h1,
 h1 {
-    font-size: $vr*14;
+    margin-bottom: $vr*5;
+    font-size: $vr*7;
+    line-height: 1.1;
+
+    @include breakpoint($md) {
+        font-size: $vr*13;
+    }
 }
 
 .h2,
 h2 {
-    font-size: $vr*10;
+    margin-bottom: $vr*5;
+    font-size: $vr*6;
+    line-height: 1.1;
+
+    @include breakpoint($md) {
+        font-size: $vr*9;
+    }
 }
 
 .h3,
 h3 {
-    font-size: $vr*8;
+    margin-bottom: $vr*3;
+    font-size: $vr*5;
+    line-height: 1.1;
+
+    @include breakpoint($md) {
+        font-size: $vr*7;
+    }
 }
 
 .h4,
 h4 {
-    font-size: $vr*6;
+    margin-bottom: $vr*3;
+    font-size: $vr*4;
+    line-height: 1.1;
 }
 
 .h5,
 h5 {
-    font-size: $vr*4;
+    margin-bottom: $vr*3;
+    font-size: $vr*3;
+    font-weight: $font-weight-medium;
+}
+
+.text--gradient {
+    @include gradient-text();
 }
