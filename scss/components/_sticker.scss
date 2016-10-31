@@ -1,0 +1,45 @@
+.sticker--style-a {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: rotateZ(10deg);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: $brand-color-a;
+        content: "";
+        transform: rotateZ(30deg);
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: $brand-color-a;
+        content: "";
+        transform: rotateZ(60deg);
+    }
+
+    .sticker__inner {
+        position: relative;
+        z-index: 10;
+        padding: 20px 10px;
+        width: 100%;
+        height: 100%;
+        background: $brand-color-a;
+        color: $brand-white;
+        font-weight: $font-weight-medium;
+        font-size: $vr*5;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
