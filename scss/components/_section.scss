@@ -1,0 +1,14 @@
+.section {
+    position: relative;
+    z-index: $z-mid;
+    padding: $vr*4 0 $vr*2;
+}
+
+.section--theme-b {
+    background: $brand-color-e;
+    color: $brand-white;
+}
+
+.section--theme-c {
+    background: tint($brand-color-c, 70%);
+}

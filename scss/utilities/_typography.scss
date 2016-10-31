@@ -25,7 +25,7 @@ h5,
 h6 {
     display: block;
     font-family: $font-family-base;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-medium;
 }
 
 .h1,
@@ -42,7 +42,7 @@ h1 {
 .h2,
 h2 {
     margin-bottom: $vr*5;
-    font-size: $vr*6;
+    font-size: $vr*5;
     line-height: 1.1;
 
     @include breakpoint($md) {
@@ -53,7 +53,7 @@ h2 {
 .h3,
 h3 {
     margin-bottom: $vr*3;
-    font-size: $vr*5;
+    font-size: $vr*4;
     line-height: 1.1;
 
     @include breakpoint($md) {
@@ -64,15 +64,8 @@ h3 {
 .h4,
 h4 {
     margin-bottom: $vr*3;
-    font-size: $vr*4;
-    line-height: 1.1;
-}
-
-.h5,
-h5 {
-    margin-bottom: $vr*3;
     font-size: $vr*3;
-    font-weight: $font-weight-medium;
+    line-height: 1.1;
 }
 
 .text--gradient {

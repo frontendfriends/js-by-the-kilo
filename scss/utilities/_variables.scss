@@ -36,6 +36,7 @@ $brand-color-a: #ed1c24;
 $brand-color-b: #480E78;
 $brand-color-c: #ffd400;
 $brand-color-d: #ccc;
+$brand-color-e: #292929;
 
 $brand-white: #FFF;
 $brand-black: #000;
@@ -66,6 +67,8 @@ $icon-font: 'icomoon';
 // Font Sizing
 $font-size-base: 16px;
 $line-height-base: 1.4;
+$font-size-small: 15px;
+$font-size-large: $vr*4;
 
 $font-weight-bold: 700;
 $font-weight-medium: 600;

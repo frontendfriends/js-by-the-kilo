@@ -33,9 +33,13 @@ body {
 	color: $text-color;
 
 	font-family: $font-family-base;
-	font-size: $font-size-base;
+	font-size: $font-size-small;
 	font-weight: $font-weight-regular;
 	line-height: $line-height-base;
+
+	@include breakpoint($md) {
+		font-size: $font-size-base;
+	}
 }
 
 img {

@@ -26,7 +26,7 @@ button::-moz-focus-inner {
 	text-transform: uppercase;
 	white-space: nowrap;
 	font-weight: $font-weight-bold;
-	font-size: $vr*4;
+	font-size: $font-size-base;
 	font-family: $font-family-base;
 	cursor: pointer;
 	transition: background 250ms, border-color 250ms;
@@ -34,7 +34,7 @@ button::-moz-focus-inner {
 	-webkit-font-smoothing: antialiased; // get rid of faux bolding
 	@include breakpoint($md) {
 		padding: $btn-padding-y-large $btn-padding-x-large;
-		font-size: $vr*3;
+		font-size: $font-size-large;
 	}
 
 	&:hover,
