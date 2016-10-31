@@ -21,9 +21,14 @@
             font-size: $font-size-large*2;
         }
     }
+}
 
-    .list__highlight {
-        font-weight: $font-weight-medium;
-        text-transform: uppercase;
-    }
+.list--style-b {
+    list-style: disc inside;
+    margin-left: 15px;
+}
+
+.list__highlight {
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
 }

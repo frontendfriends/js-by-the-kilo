@@ -67,7 +67,7 @@ $icon-font: 'icomoon';
 // Font Sizing
 $font-size-base: 16px;
 $line-height-base: 1.4;
-$font-size-small: 15px;
+$font-size-small: $vr*3;
 $font-size-large: $vr*4;
 
 $font-weight-bold: 700;
