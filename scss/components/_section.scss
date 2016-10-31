@@ -23,6 +23,8 @@
 }
 
 .section--style-a {
+    z-index: $z-mid + 3;
+
     &::after {
         position: absolute;
         top: 100%;
@@ -54,10 +56,18 @@
 
     + .section {
         padding-top: $vr*4 + 30px;
-        z-index: $z-base;
 
         @include breakpoint($md) {
             padding-top: $vr*8 + 40px;
         }
+    }
+
+    // dumb hack, I can't be bothered making it better, sorry
+    + .section--style-a {
+        z-index: $z-mid + 2;
+    }
+
+    + .section--style-a + .section--style-a {
+        z-index: $z-mid + 1;
     }
 }

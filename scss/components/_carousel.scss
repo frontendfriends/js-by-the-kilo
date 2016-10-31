@@ -1,0 +1,23 @@
+.carousel {
+    position: relative;
+    padding: 0 40px;
+}
+
+.carousel__arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    transform: translateY(-50%);
+
+    span {
+        @include visually-hidden;
+    }
+}
+
+.carousel__next {
+    left: auto;
+    right: 0;
+}
