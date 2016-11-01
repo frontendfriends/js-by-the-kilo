@@ -3,6 +3,7 @@
     width: 100px;
     height: 100px;
     transform: rotateZ(10deg);
+    margin: 25px;
 
     &::before {
         position: absolute;
@@ -48,5 +49,17 @@
 
         align-items: center;
         justify-content: center;
+    }
+}
+
+.sticker__container {
+    position: relative;
+    display: inline-block;
+    padding: $vr*8 $vr*8 0 0;
+
+    .sticker {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
