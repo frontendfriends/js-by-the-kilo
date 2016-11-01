@@ -3,12 +3,12 @@ blockquote {
     display: inline-block;
     padding: $vr*3;
     quotes: "\201C""\201D""\2018""\2019";
-    font-size: $vr*3;
+    font-size: $vr*4;
     line-height: 1.1;
 
     @include breakpoint($md) {
-    font-size: $vr*5;
         padding: $vr*4;
+        font-size: $vr*5;
     }
 
     &::after,

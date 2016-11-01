@@ -1,6 +1,9 @@
 .carousel {
     position: relative;
-    padding: 0 40px;
+    padding: 0 20px;
+    @include breakpoint($md) {
+        padding: 0 40px;
+    }
 }
 
 .carousel__arrow {
@@ -11,6 +14,9 @@
     background: none;
     color: inherit;
     transform: translateY(-50%);
+    @include breakpoint($md) {
+        font-size: 200%;
+    }
 
     span {
         @include visually-hidden;
@@ -18,6 +24,6 @@
 }
 
 .carousel__next {
-    left: auto;
     right: 0;
+    left: auto;
 }
