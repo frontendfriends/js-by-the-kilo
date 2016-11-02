@@ -1,3 +1,61 @@
 .header {
-    
+    position: fixed;
+    top: 0;
+    z-index: $z-high;
+    display: block;
+    padding: $vr*2 0;
+    width: 100%;
+    background: $brand-color-e;
+    color: $brand-white;
+
+    + .page {
+        padding-top: $vr*14;
+    }
+
+    @include breakpoint($lg) {
+        min-height: $vr*25;
+        padding: $vr*4 0;
+
+        + .page {
+            padding-top: $vr*25;
+        }
+    }
+
+    > .container {
+    	@include breakpoint($lg) {
+            display: flex;
+
+            align-items: center;
+        }
+    }
+}
+
+.header-logo {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: $vr*5;
+
+    a,
+    img {
+        display: block;
+        max-height: $vr*10;
+    }
+
+    @include breakpoint($lg) {
+        margin-right: 20px;
+
+        a,
+        img {
+            max-height: none;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.header-logo__text {
+    @include visually-hidden;
 }
