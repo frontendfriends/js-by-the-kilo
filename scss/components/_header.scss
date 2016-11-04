@@ -13,11 +13,11 @@
     }
 
     @include breakpoint($lg) {
-        min-height: $vr*25;
+        height: $vr*20;
         padding: $vr*4 0;
 
         + .page {
-            padding-top: $vr*25;
+            padding-top: $vr*20;
         }
     }
 
@@ -34,20 +34,15 @@
     display: inline-block;
     margin-bottom: 0;
     font-size: $vr*5;
+    max-width: 175px;
 
     a,
     img {
         display: block;
-        max-height: $vr*10;
     }
 
     @include breakpoint($lg) {
         margin-right: 20px;
-
-        a,
-        img {
-            max-height: none;
-        }
 
         a {
             display: flex;
