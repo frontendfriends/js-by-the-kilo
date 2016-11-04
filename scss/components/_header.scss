@@ -34,7 +34,7 @@
     display: inline-block;
     margin-bottom: 0;
     font-size: $vr*5;
-    max-width: 175px;
+    max-width: 120px;
 
     a,
     img {
@@ -43,6 +43,7 @@
 
     @include breakpoint($lg) {
         margin-right: 20px;
+        max-width: 175px;
 
         a {
             display: flex;
