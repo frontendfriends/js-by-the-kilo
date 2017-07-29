@@ -37,9 +37,5 @@
         "node-sass": "^3.3.3"
     },
     "config": {
-        "ghooks": {
-            "pre-commit": "npm run visualTest",
-            "post-commit": "npm run reference"
-        }
     }
 }
