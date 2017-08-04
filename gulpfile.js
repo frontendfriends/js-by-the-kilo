@@ -12,6 +12,7 @@ var jshint = require('gulp-jshint');
 var util = require('gulp-util');
 var uglify = require('gulp-uglify');
 var cssmin = require('gulp-cssmin');
+var ghPages = require('gulp-gh-pages');
 
 
 var config = {
@@ -95,4 +96,10 @@ gulp.task('watch', ['fileinclude'], function () {
   gulp.watch('dist/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['main-scripts', 'vendor-scripts', 'sass', 'fileinclude', 'browser-sync', 'watch']);
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('dist/**/*')
+    .pipe(ghPages());
+});
+
+gulp.task('build', ['main-scripts', 'vendor-scripts', 'sass', 'fileinclude', 'browser-sync']);
+gulp.task('default', ['build', 'watch']);
