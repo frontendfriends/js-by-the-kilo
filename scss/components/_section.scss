@@ -9,6 +9,10 @@
     }
 }
 
+.section__title {
+    @extend .h3;
+}
+
 .section--theme-a {
     background: $brand-white;
 }
@@ -38,7 +42,7 @@
         transform: translateX(-50%);
 
         @include breakpoint($md) {
-            border-width: 60px 60px 0 60px;
+            border-width: 40px 40px 0 40px;
         }
     }
 
@@ -58,7 +62,7 @@
         padding-top: $vr*4 + 30px;
 
         @include breakpoint($md) {
-            padding-top: $vr*8 + 40px;
+            padding-top: $vr*8 + 20px;
         }
     }
 

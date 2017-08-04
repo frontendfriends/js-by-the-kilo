@@ -29,7 +29,7 @@ $breakpoint-xl-width-max: $xxl - 1;
 
 $retina-query: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
 
-$max-width: 1280px;
+$max-width: 960px;
 
 // Colors
 $brand-color-a: #ed1c24;
@@ -41,7 +41,7 @@ $brand-color-e: #292929;
 $brand-white: #FFF;
 $brand-black: #000;
 
-$text-color: #525252 !default;
+$text-color: $brand-black !default;
 $background-color: #f4f4f4;
 
 // Dimensions
@@ -58,7 +58,7 @@ $btn-padding-y-large: $vr*2;
 $btn-padding-x-large: 50px;
 
 // Typography
-$font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 $font-family-serif: 'Georgia Pro', Georgia, Times, serif;
 $font-family-mono: 'Anonymous Pro', 'Droid Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, 'Lucida Console', Courier, monospace;
 $font-family-base: $font-family-sans-serif;

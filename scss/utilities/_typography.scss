@@ -23,31 +23,24 @@ samp {
 .h3,
 .h4,
 .h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h6 {
     display: block;
     font-family: $font-family-base;
     font-weight: $font-weight-medium;
 }
 
-.h1,
-h1 {
-    margin-bottom: $vr*5;
+.h1 {
+    margin-bottom: $vr*9;
     font-size: $vr*7;
     line-height: 1.1;
+    text-transform: uppercase;
 
     @include breakpoint($md) {
-        font-size: $vr*10;
+        font-size: $vr*16;
     }
 }
 
-.h2,
-h2 {
+.h2 {
     margin-bottom: $vr*5;
     font-size: $vr*5;
     line-height: 1.1;
@@ -57,8 +50,7 @@ h2 {
     }
 }
 
-.h3,
-h3 {
+.h3 {
     margin-bottom: $vr*3;
     font-size: $vr*4;
     line-height: 1.1;
@@ -68,8 +60,7 @@ h3 {
     }
 }
 
-.h4,
-h4 {
+.h4 {
     margin-bottom: $vr*3;
     font-size: $vr*3;
     line-height: 1.1;
