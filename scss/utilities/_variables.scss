@@ -1,9 +1,9 @@
 $susy: (
   columns: 12,
-  gutters: 1/4,
+  gutters: 1,
   math: fluid,
   output: float,
-  gutter-position: after
+  gutter-position: inside
   // debug: (image: show)
 );
 
@@ -29,7 +29,7 @@ $breakpoint-xl-width-max: $xxl - 1;
 
 $retina-query: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
 
-$max-width: 960px;
+$max-width: 980px;
 
 // Colors
 $brand-color-a: #ed1c24;
@@ -67,7 +67,7 @@ $icon-font: 'icomoon';
 // Font Sizing
 $font-size-base: 16px;
 $line-height-base: 1.4;
-$font-size-small: $vr*3;
+$font-size-small: $vr*2;
 $font-size-large: $vr*4;
 
 $font-weight-bold: 700;

@@ -30,13 +30,14 @@ samp {
 }
 
 .h1 {
-    margin-bottom: $vr*9;
-    font-size: $vr*7;
-    line-height: 1.1;
+    margin-bottom: $vr*3;
+    font-size: $vr*15;
+    line-height: 1;
     text-transform: uppercase;
 
     @include breakpoint($md) {
-        font-size: $vr*16;
+        font-size: $vr*23;
+        margin-bottom: $vr*8;
     }
 }
 
@@ -76,5 +77,9 @@ samp {
 
 .text--color-a {
     color: $brand-color-a
+}
+
+.text--small {
+    font-size: $font-size-small;
 }
 

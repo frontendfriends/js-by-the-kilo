@@ -1,0 +1,22 @@
+.block {
+    position: relative;
+    z-index: $z-mid;
+}
+
+.block--size-a {
+    @include breakpoint($md) {
+        @include span(12)
+    }
+}
+
+.block--size-b {
+    @include breakpoint($md) {
+        @include span(6)
+    }
+}
+
+.block--last {
+    @include breakpoint($md) {
+        @include last();
+    }
+}

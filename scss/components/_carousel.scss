@@ -1,9 +1,6 @@
 .carousel {
     position: relative;
     padding: 0 15%;
-    @include breakpoint($md) {
-        padding: 0 5%;
-    }
 }
 
 .carousel__arrow {
@@ -14,7 +11,8 @@
     background: none;
     color: inherit;
     transform: translateY(-50%);
-        font-size: 150%;
+    font-size: 150%;
+
     @include breakpoint($md) {
         font-size: 200%;
     }

@@ -46,6 +46,8 @@
 }
 
 @mixin gradient-text($startColor: lighten($brand-color-c, 30%), $endColor: darken($brand-color-c, 20%), $deg: 120deg) {
+	color: mix($startColor, $endColor);
+
 	 @supports(-webkit-background-clip: text){
 		padding-bottom: 3px;
 

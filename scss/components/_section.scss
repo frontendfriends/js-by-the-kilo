@@ -26,6 +26,14 @@
     background: tint($brand-color-c, 70%);
 }
 
+.section--theme-d {
+    background: $brand-white url(/img/4339582047_7e364c29ea_o.jpg) no-repeat center right/auto 100%;
+
+    @include breakpoint($md) {
+        background-position: center left;
+    }
+}
+
 .section--style-a {
     z-index: $z-mid + 3;
 
