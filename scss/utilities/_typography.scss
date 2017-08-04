@@ -73,3 +73,8 @@ samp {
 .text--gradient {
     @include gradient-text();
 }
+
+.text--color-a {
+    color: $brand-color-a
+}
+
