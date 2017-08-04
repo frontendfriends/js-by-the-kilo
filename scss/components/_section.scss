@@ -27,7 +27,7 @@
 }
 
 .section--theme-d {
-    background: $brand-white url(/img/4339582047_7e364c29ea_o.jpg) no-repeat center right/auto 100%;
+    background: $brand-white url(../img/4339582047_7e364c29ea_o.jpg) no-repeat center right/auto 100%;
 
     @include breakpoint($md) {
         background-position: center left;
