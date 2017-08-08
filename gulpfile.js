@@ -80,7 +80,8 @@ gulp.task('vendor-scripts', function() {
         .src([
             './bower_components/jquery/dist/jquery.js',
             './bower_components/jquery-tiny-pubsub/dist/ba-tiny-pubsub.js',
-            './bower_components/slick-carousel/slick/slick.js'
+            './bower_components/slick-carousel/slick/slick.js',
+            './js/vendor/*.js'
         ])
         .pipe(concat('plugins.js'))
         .pipe(config.production ? uglify() : util.noop())
