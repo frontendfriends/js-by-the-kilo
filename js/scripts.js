@@ -168,18 +168,19 @@ var bep = bep ? bep : {};
 (function($) {
     $.extend(bep, {
         starwipe: {
-			starwipeSelector: '.starwipe',
+			starwipeSelector: '.js-starwipe-trigger',
 
             init: function() {
                 var self = this;
-
-                if ( !jQuery.starwipe( url ) ) {
-                    return;
-                }
                 
                 $(self.starwipeSelector).click(function(event) {
+                    var url = $(event.target).attr('href');
+
+                    if ( !$.starwipe( url ) ) {
+                        return;
+                    }
+
                     event.preventDefault();
-                    $.starwipe($(event.target).attr('href'));
                 });
 
             }
