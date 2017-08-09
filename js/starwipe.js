@@ -6,6 +6,10 @@ var bep = bep ? bep : {};
 
             init: function() {
                 var self = this;
+
+                if ( !jQuery.starwipe( url ) ) {
+                    return;
+                }
                 
                 $(self.starwipeSelector).click(function(event) {
                     event.preventDefault();
