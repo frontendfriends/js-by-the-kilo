@@ -8,8 +8,8 @@ var bep = bep ? bep : {};
                 var self = this;
                 
                 $(self.starwipeSelector).click(function(event) {
-                    $.starwipe($(event.target).attr('href'));
                     event.preventDefault();
+                    $.starwipe($(event.target).attr('href'));
                 });
 
             }

@@ -93,7 +93,7 @@ gulp.task('watch', ['fileinclude'], function () {
   gulp.watch('scss/**/*.scss', ['sass']);
   gulp.watch('src/**/*.{png,jpg,jpeg,gif,webp,svg,html,md,woff,woff2,ico}', ['fileinclude']);
   gulp.watch('src/**/*.md', ['fileinclude']);
-  gulp.watch('./js/**/*.js', ['main-scripts'])
+  gulp.watch('./js/**/*.js', ['main-scripts', 'vendor-scripts'])
   gulp.watch('dist/*.html').on('change', browserSync.reload);
 });
 
